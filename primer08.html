@@ -16,22 +16,16 @@
 
 <script type="text/javascript">
 "use strict"; // za uporabo razredov ("class")
-
 var divZaIzpis = document.getElementById("divZaIzpis");
 // spremenljivka za izpis sporočil
-
 function log(sporočilo) {
     return "<div>" + sporočilo + "</div>";
 }
-
 divZaIzpis.innerHTML += log("Pritisnite tipko na vezju");
-
 var socket = io.connect("192.168.1.117:8080"); // povezava preko vtičnika
-
 socket.on("sporočiloKlientu", function (sporočilo){
     divZaIzpis.innerHTML += log(sporočilo); // dodamo sporočilo
 });
-
 </script>
     
 </body>
