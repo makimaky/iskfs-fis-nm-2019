@@ -89,5 +89,10 @@ function sendValues (socket) {
 		        {
 				    "želenaVrednost": želenaVrednost,
 				    "dejanskaVrednost": dejanskaVrednost
-				    });
+				    })
+				    
+
+		         
+				    
+				  
 };
